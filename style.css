@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Red Hat Mono', monospace;
+}
+body{
+	overflow-y:scroll ;
+}
+nav p{
+	margin: 4vh;
+	text-transform: uppercase;
+	font-weight: bold;
+
+}
+main{
+	display: flex;
+	margin-top: 3vh;
+
+}
+img{
+	margin-left:4vh ;
+	width: 40%;
+	height: 40%;
+}
+@media(max-width: 600px){
+	main{
+		display: block;
+		text-align: center;
+		margin-top: 2vh;
+		margin-right: 5vh;
+	}
+	img{
+		width: 70%;
+		height: 70%;
+		display: inline;
+		text-align: center;
+	}
+	div h1, div p{
+		font-size: 20px;
+		line-height: 1.5;
+	}
+
+}
+@media(max-width: 400px){
+	main{
+		margin-right: 5vh;
+	}
+	img{
+		width: 80%;
+		height: 80%;
+		display: inline;
+		text-align: center;
+	}
+	div{
+		margin-top: 4vh;
+	}
+	div p{
+		font-size: 15px
+	}
+	div h1{
+		font-size: 20px;
+		text-align: center;
+	}
+	footer{
+		margin-top: 10vh;
+		font-size: 10px;
+
+	}
+
+}
+main div{
+	margin-left: 5vh;
+	line-height: 2;
+}
+
+h1{
+	text-transform: uppercase;
+}
+
+div a{
+	font-size: 15px;
+	text-transform: uppercase;
+	margin-top: 3vh;
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	padding: 10px 20px;
+	background-color: black;
+	transition: linear .2s;
+}
+div a:hover{
+	color:rgb(100, 100, 100) ;
+}
+footer{
+	color: rgb(100, 100, 100);
+	position: absolute;
+	bottom: 10px;
+	left: 15px;
+}
+footer a{
+	text-decoration: none;
+	color:rgb(50, 50, 50) ;
+	transition: linear .2s;
+}
+footer a:hover{
+	color: rgb(100, 100, 100);
+}
